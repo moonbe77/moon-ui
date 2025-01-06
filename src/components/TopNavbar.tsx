@@ -6,7 +6,7 @@ interface MenuItem {
   dropdownItems?: { label: string; href: string }[];
 }
 
-interface NavbarProps {
+export interface NavbarProps {
   menuItems: MenuItem[];
   logo?: React.ReactNode;
 }
