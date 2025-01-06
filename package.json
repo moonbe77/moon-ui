@@ -7,11 +7,12 @@
     "dist"
   ],
   "main": "./dist/moon-ui.umd.cjs",
-  "module": "./dist/moon-ui.js",
+  "module": "./dist/moon-ui.es.js",
   "exports": {
     ".": {
-      "import": "./dist/moon-ui.js",
-      "require": "./dist/moon-ui.umd.cjs"
+      "import": "./dist/moon-ui.es.js",
+      "require": "./dist/moon-ui.umd.cjs",
+      "default": "./dist/moon-ui.es.js"
     },
     "./style.css": "./dist/moon-ui.css"
   },
