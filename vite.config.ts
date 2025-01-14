@@ -11,10 +11,10 @@ export default defineConfig({
     tsconfigPaths(),
     dts({
       rollupTypes: true,
-      insertTypesEntry: true,
-      outDir: "dist/types",
+      // insertTypesEntry: true,
+      // outDir: "dist/types",
       tsconfigPath: "./tsconfig.app.json",
-      staticImport: true,
+      // staticImport: true,
     }),
   ],
   build: {
