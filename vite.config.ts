@@ -10,8 +10,11 @@ export default defineConfig({
     react(),
     tsconfigPaths(),
     dts({
+      rollupTypes: true,
       insertTypesEntry: true,
       outDir: "dist/types",
+      tsconfigPath: "./tsconfig.app.json",
+      staticImport: true,
     }),
   ],
   build: {
@@ -27,7 +30,6 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ["react", "react-dom", "react/jsx-runtime"],
-
       output: {
         globals: {
           react: "React",
